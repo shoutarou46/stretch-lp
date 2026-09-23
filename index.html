@@ -162,13 +162,6 @@
       padding: 6px 16px;
       letter-spacing: 0.08em;
     }
-    .hero-wave {
-      position: absolute;
-      bottom: -1px; left: 0; right: 0;
-      height: 70px;
-      display: block;
-      pointer-events: none;
-    }
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -710,13 +703,14 @@
     /* ─── CTA SECTION ─── */
     .cta-section {
       background: var(--white);
-      padding: 100px 24px;
+      padding: 100px 0;
       position: relative;
       overflow: hidden;
     }
     .cta-inner {
       max-width: 820px;
       margin: 0 auto;
+      padding: 0 24px;
       text-align: center;
       position: relative;
       z-index: 1;
@@ -905,7 +899,8 @@
       .sticky-header { padding: 0 20px; }
       .header-cta { padding: 8px 16px; font-size: 0.75rem; }
       section { padding: 72px 18px; }
-      .cta-section { padding: 72px 18px; }
+      .cta-section { padding: 72px 0; }
+      .cta-inner { padding: 0 18px; }
       .info-section { padding: 72px 18px; }
       .pain-checklist { grid-template-columns: 1fr; }
       .why-layout { grid-template-columns: 1fr; }
@@ -930,9 +925,6 @@
   <!-- ─── HERO ─── -->
   <section class="hero" role="banner">
     <img class="hero-photo" src="images/hero-photo.png" alt="毎日頑張っている自分のために。全身矯正ストレッチ。カラダが軽くなると、毎日がもっと心地よく。肩こり改善・腰痛改善・疲労回復。ホリエジム 新桜台駅 徒歩1分">
-    <svg class="hero-wave" viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M0,40 C240,8 480,65 720,36 C960,8 1200,62 1440,38 L1440,70 L0,70 Z" fill="#ffffff"/>
-    </svg>
   </section>
 
   <!-- ─── CAMPAIGN BANNER ─── -->
@@ -1003,7 +995,9 @@
           公式LINEから予約する
         </a>
       </div>
-      <img src="images/pricing.png" alt="料金案内。お試し体験 期間限定4,980円（こちらは60分、実際のレッスンを体験できます）。都度払い8,500円。回数券 4回券34,000円→32,000円（1回あたり8,000円）、8回券68,000円→60,000円（1回あたり7,500円）。表記は全て税込価格。※1レッスン60分（お着替えなどの時間も含みます）。回数券の有効期限はありません。そのため、ご購入後の返金は承っておりません。あらかじめご了承ください。" style="display:block;width:100%;max-width:900px;margin:44px auto 0;">
+    </div>
+    <img src="images/pricing.png" alt="料金案内。お試し体験 期間限定4,980円（こちらは60分、実際のレッスンを体験できます）。都度払い8,500円。回数券 4回券34,000円→32,000円（1回あたり8,000円）、8回券68,000円→60,000円（1回あたり7,500円）。表記は全て税込価格。※1レッスン60分（お着替えなどの時間も含みます）。回数券の有効期限はありません。そのため、ご購入後の返金は承っておりません。あらかじめご了承ください。" style="display:block;width:100%;max-width:900px;margin:44px auto;">
+    <div class="cta-inner reveal">
       <div class="cta-tags">
         <span class="cta-tag">ホリエジム</span>
         <span class="cta-tag">新桜台駅徒歩1分</span>
