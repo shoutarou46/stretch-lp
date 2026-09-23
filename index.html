@@ -118,7 +118,7 @@
     /* ─── HERO ─── */
     .hero {
       background: var(--white);
-      padding-top: 64px;
+      padding: 64px 0 0;
       position: relative;
       overflow: hidden;
     }
@@ -128,25 +128,9 @@
       max-width: 900px;
       margin: 0 auto;
     }
-    .hero-inner {
-      width: 100%;
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 40px 24px 130px;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-    .hero-cta-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-      animation: fadeUp 0.8s ease 0.3s both;
-    }
     .hero-btn {
       display: inline-block;
-      background: var(--coral);
+      background: #f5820f;
       color: var(--white);
       font-family: 'Noto Sans JP', sans-serif;
       font-size: 0.95rem;
@@ -157,14 +141,8 @@
       transition: background 0.2s ease, transform 0.2s ease;
     }
     .hero-btn:hover {
-      background: var(--coral-dark);
+      background: #d96f0a;
       transform: translateY(-2px);
-    }
-    .hero-note {
-      font-family: 'Noto Sans JP', sans-serif;
-      font-size: 0.72rem;
-      color: var(--text-light);
-      letter-spacing: 0.1em;
     }
     .hero-badges {
       display: flex;
@@ -205,7 +183,7 @@
       margin: 0 auto;
     }
     .campaign-banner img + img { margin-top: 16px; }
-    .campaign-cta { text-align: center; margin-top: 28px; }
+    .campaign-cta { text-align: center; margin: 28px 0; }
 
     /* ─── IMAGE BANNER SECTIONS ─── */
     .image-banner-section { padding: 0; }
@@ -933,7 +911,6 @@
       .why-layout { grid-template-columns: 1fr; }
       .reason-card { flex-direction: column; }
       .illust-grid { grid-template-columns: 1fr; }
-      .hero-inner { padding: 24px 18px 90px; }
       .intro-pain-list { grid-template-columns: repeat(2, 1fr); gap: 10px; }
     }
   </style>
@@ -953,12 +930,6 @@
   <!-- ─── HERO ─── -->
   <section class="hero" role="banner">
     <img class="hero-photo" src="images/hero-photo.png" alt="毎日頑張っている自分のために。全身矯正ストレッチ。カラダが軽くなると、毎日がもっと心地よく。肩こり改善・腰痛改善・疲労回復。ホリエジム 新桜台駅 徒歩1分">
-    <div class="hero-inner">
-      <div class="hero-cta-wrap">
-        <a href="#cta" class="hero-btn">初回体験を予約する</a>
-        <p class="hero-note">初回体験受付中｜お気軽にご相談ください</p>
-      </div>
-    </div>
     <svg class="hero-wave" viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
       <path d="M0,40 C240,8 480,65 720,36 C960,8 1200,62 1440,38 L1440,70 L0,70 Z" fill="#ffffff"/>
     </svg>
@@ -969,7 +940,7 @@
     <img src="images/campaign-banner.jpg" alt="期間限定 入会金・事務手数料が0円">
     <img src="images/campaign-trial.png" alt="期間限定 10名様限定 初回お試し体験が4,980円（税込）">
     <div class="campaign-cta">
-      <a href="#cta" class="hero-btn">今すぐ申し込む</a>
+      <a href="#cta" class="hero-btn">初回体験を予約する</a>
     </div>
   </section>
 
@@ -1022,6 +993,7 @@
       <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,30 L1440,0 L0,0 Z" fill="#ffffff"/>
     </svg>
     <div class="cta-inner reveal">
+      <img src="images/campaign-trial.png" alt="期間限定！初回お試し体験が！！！10名様限定!! 通常8,500円のところ4,980円（税込）" style="display:block;width:100%;max-width:700px;margin:0 auto 36px;">
       <p class="cta-subtitle">初回体験はホットペッパーもしくは公式LINEから</p>
       <div class="cta-btn-wrap">
         <a href="https://beauty.hotpepper.jp/kr/slnH000816460/" class="btn-hotpepper" target="_blank" rel="noopener noreferrer">
